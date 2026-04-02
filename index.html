@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Marketing Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">Elevate Marketing</div>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Marketing Strategy that Converts</h1>
+        <p>Partner with us to grow brand awareness, increase leads, and maximize ROI through tailored digital campaigns.</p>
+        <a class="button" href="#contact">Get a Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Brand Strategy</h3>
+          <p>Position your business for long-term growth with messaging, identity, and audience profiling.</p>
+        </article>
+        <article class="card">
+          <h3>Digital Advertising</h3>
+          <p>High-performance paid campaigns across Google, Meta, LinkedIn, and TikTok for measurable results.</p>
+        </article>
+        <article class="card">
+          <h3>Content Marketing</h3>
+          <p>Creating content that educates customers and builds authority through blogs, video, and social storytelling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <h2>About Us</h2>
+      <p>Elevate Marketing Co. is a full-service team built to deliver strategy, creative, and analytics that drive revenue. We bring enterprise-level expertise to companies of every size.</p>
+      <ul>
+        <li>10+ years of marketing leadership</li>
+        <li>100+ successful campaigns</li>
+        <li>Data-driven optimization</li>
+      </ul>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Recent Work</h2>
+      <div class="work-grid">
+        <figure>
+          <img src="https://via.placeholder.com/420x250?text=Project+1" alt="Project 1" />
+          <figcaption>Lead generation campaign for SaaS startup (180% conversions)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://via.placeholder.com/420x250?text=Project+2" alt="Project 2" />
+          <figcaption>Brand refresh and launch for B2B consultancy</figcaption>
+        </figure>
+        <figure>
+          <img src="https://via.placeholder.com/420x250?text=Project+3" alt="Project 3" />
+          <figcaption>Performance marketing for eCommerce (ROAS 7.5x)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Get in Touch</h2>
+      <p>Ready to accelerate growth? Tell us about your goals and we’ll build a custom plan.</p>
+      <form id="contactForm" class="contact-form">
+        <label>Company name<input name="company" type="text" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="button">Send Request</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> Elevate Marketing Co. All rights reserved.</p>
+      <p>123 Marketing Ave, Suite 400, Your City</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

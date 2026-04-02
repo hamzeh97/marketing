@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,75 +16,95 @@
       <nav class="nav">
         <div class="logo">Elevate Marketing</div>
         <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+          <li><a href="#about" data-en="About" data-ar="معلومات">About</a></li>
+          <li><a href="#work" data-en="Work" data-ar="أعمالنا">Work</a></li>
+          <li><a href="#contact" data-en="Contact" data-ar="اتصل">Contact</a></li>
         </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" aria-label="Toggle dark mode" title="Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="lang-toggle" aria-label="Change language" title="Change Language">
+            <span>العربية</span>
+          </button>
+        </div>
       </nav>
       <div class="hero-content">
-        <h1>Marketing Strategy that Converts</h1>
-        <p>Partner with us to grow brand awareness, increase leads, and maximize ROI through tailored digital campaigns.</p>
-        <a class="button" href="#contact">Get a Free Consultation</a>
+        <h1 data-en="Marketing Strategy that Converts" data-ar="استراتيجية تسويق تحقق النتائج">Marketing Strategy that Converts</h1>
+        <p data-en="Partner with us to grow brand awareness, increase leads, and maximize ROI through tailored digital campaigns." data-ar="تعاون معنا لزيادة التوعية بالعلامة التجارية وزيادة العملاء وتعظيم العائد على الاستثمار من خلال حملات رقمية مخصصة.">Partner with us to grow brand awareness, increase leads, and maximize ROI through tailored digital campaigns.</p>
+        <a class="button" href="#contact" data-en="Get a Free Consultation" data-ar="احصل على استشارة مجانية">Get a Free Consultation</a>
       </div>
     </div>
   </header>
 
   <main class="container">
     <section id="services" class="section">
-      <h2>Our Services</h2>
+      <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
       <div class="cards">
         <article class="card">
-          <h3>Brand Strategy</h3>
-          <p>Position your business for long-term growth with messaging, identity, and audience profiling.</p>
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 data-en="Brand Strategy" data-ar="استراتيجية العلامة التجارية">Brand Strategy</h3>
+          <p data-en="Position your business for long-term growth with messaging, identity, and audience profiling." data-ar="ضع عملك في موضع النمو طويل الأجل من خلال الرسائل والهوية وتحديد الجمهور.">Position your business for long-term growth with messaging, identity, and audience profiling.</p>
         </article>
         <article class="card">
-          <h3>Digital Advertising</h3>
-          <p>High-performance paid campaigns across Google, Meta, LinkedIn, and TikTok for measurable results.</p>
+          <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 data-en="Digital Advertising" data-ar="الإعلان الرقمي">Digital Advertising</h3>
+          <p data-en="High-performance paid campaigns across Google, Meta, LinkedIn, and TikTok for measurable results." data-ar="حملات مدفوعة عالية الأداء عبر Google و Meta و LinkedIn و TikTok لنتائج قابلة للقياس.">High-performance paid campaigns across Google, Meta, LinkedIn, and TikTok for measurable results.</p>
         </article>
         <article class="card">
-          <h3>Content Marketing</h3>
-          <p>Creating content that educates customers and builds authority through blogs, video, and social storytelling.</p>
+          <div class="card-icon"><i class="fas fa-pen-fancy"></i></div>
+          <h3 data-en="Content Marketing" data-ar="تسويق المحتوى">Content Marketing</h3>
+          <p data-en="Creating content that educates customers and builds authority through blogs, video, and social storytelling." data-ar="إنشاء محتوى يثقف العملاء ويبني السلطة من خلال المدونات والفيديو ورواية القصص الاجتماعية.">Creating content that educates customers and builds authority through blogs, video, and social storytelling.</p>
         </article>
       </div>
     </section>
 
     <section id="about" class="section alt">
-      <h2>About Us</h2>
-      <p>Elevate Marketing Co. is a full-service team built to deliver strategy, creative, and analytics that drive revenue. We bring enterprise-level expertise to companies of every size.</p>
-      <ul>
-        <li>10+ years of marketing leadership</li>
-        <li>100+ successful campaigns</li>
-        <li>Data-driven optimization</li>
+      <h2 data-en="About Us" data-ar="من نحن">About Us</h2>
+      <p data-en="Elevate Marketing Co. is a full-service team built to deliver strategy, creative, and analytics that drive revenue. We bring enterprise-level expertise to companies of every size." data-ar="Elevate Marketing Co. هي فريق متكامل مبني لتقديم الاستراتيجية والإبداع والتحليلات التي تحقق الإيرادات. نحن نجلب الخبرة على مستوى المؤسسات للشركات من جميع الأحجام.">Elevate Marketing Co. is a full-service team built to deliver strategy, creative, and analytics that drive revenue. We bring enterprise-level expertise to companies of every size.</p>
+      <ul class="about-list">
+        <li data-en="10+ years of marketing leadership" data-ar="10+ سنوات من القيادة التسويقية">
+          <i class="fas fa-check-circle"></i>
+          <span data-en="10+ years of marketing leadership" data-ar="10+ سنوات من القيادة التسويقية">10+ years of marketing leadership</span>
+        </li>
+        <li data-en="100+ successful campaigns" data-ar="100+ حملة ناجحة">
+          <i class="fas fa-check-circle"></i>
+          <span data-en="100+ successful campaigns" data-ar="100+ حملة ناجحة">100+ successful campaigns</span>
+        </li>
+        <li data-en="Data-driven optimization" data-ar="التحسين القائم على البيانات">
+          <i class="fas fa-check-circle"></i>
+          <span data-en="Data-driven optimization" data-ar="التحسين القائم على البيانات">Data-driven optimization</span>
+        </li>
       </ul>
     </section>
 
     <section id="work" class="section">
-      <h2>Recent Work</h2>
+      <h2 data-en="Recent Work" data-ar="أعمالنا الأخيرة">Recent Work</h2>
       <div class="work-grid">
         <figure>
           <img src="https://via.placeholder.com/420x250?text=Project+1" alt="Project 1" />
-          <figcaption>Lead generation campaign for SaaS startup (180% conversions)</figcaption>
+          <figcaption data-en="Lead generation campaign for SaaS startup (180% conversions)" data-ar="حملة توليد العملاء الحاليين لشركة SaaS ناشئة (180% تحويلات)">Lead generation campaign for SaaS startup (180% conversions)</figcaption>
         </figure>
         <figure>
           <img src="https://via.placeholder.com/420x250?text=Project+2" alt="Project 2" />
-          <figcaption>Brand refresh and launch for B2B consultancy</figcaption>
+          <figcaption data-en="Brand refresh and launch for B2B consultancy" data-ar="تحديث العلامة التجارية والإطلاق لشركة استشارات B2B">Brand refresh and launch for B2B consultancy</figcaption>
         </figure>
         <figure>
           <img src="https://via.placeholder.com/420x250?text=Project+3" alt="Project 3" />
-          <figcaption>Performance marketing for eCommerce (ROAS 7.5x)</figcaption>
+          <figcaption data-en="Performance marketing for eCommerce (ROAS 7.5x)" data-ar="تسويق الأداء للتجارة الإلكترونية (ROAS 7.5x)">Performance marketing for eCommerce (ROAS 7.5x)</figcaption>
         </figure>
       </div>
     </section>
 
     <section id="contact" class="section alt">
-      <h2>Get in Touch</h2>
-      <p>Ready to accelerate growth? Tell us about your goals and we’ll build a custom plan.</p>
+      <h2 data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h2>
+      <p data-en="Ready to accelerate growth? Tell us about your goals and we'll build a custom plan." data-ar="هل أنت مستعد لتسريع النمو؟ أخبرنا عن أهدافك وسنبني خطة مخصصة.">Ready to accelerate growth? Tell us about your goals and we'll build a custom plan.</p>
       <form id="contactForm" class="contact-form">
-        <label>Company name<input name="company" type="text" required></label>
-        <label>Email<input name="email" type="email" required></label>
-        <label>Message<textarea name="message" rows="4" required></textarea></label>
-        <button type="submit" class="button">Send Request</button>
+        <label data-en="Company name" data-ar="اسم الشركة"><input name="company" type="text" placeholder="Company name" required></label>
+        <label data-en="Email" data-ar="البريد الإلكتروني"><input name="email" type="email" placeholder="your@email.com" required></label>
+        <label data-en="Message" data-ar="الرسالة"><textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea></label>
+        <button type="submit" class="button" data-en="Send Request" data-ar="إرسال الطلب">Send Request</button>
       </form>
       <p id="formMessage" class="form-message"></p>
     </section>
@@ -91,8 +112,42 @@
 
   <footer>
     <div class="container footer-grid">
-      <p>&copy; <span id="year"></span> Elevate Marketing Co. All rights reserved.</p>
-      <p>123 Marketing Ave, Suite 400, Your City</p>
+      <div class="footer-section">
+        <h4>Elevate Marketing</h4>
+        <p data-en="Transforming ideas into growth" data-ar="تحويل الأفكار إلى نمو">Transforming ideas into growth</p>
+        <div class="social-links">
+          <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4 data-en="Services" data-ar="الخدمات">Services</h4>
+        <ul>
+          <li><a href="#services" data-en="Brand Strategy" data-ar="استراتيجية العلامة التجارية">Brand Strategy</a></li>
+          <li><a href="#services" data-en="Digital Advertising" data-ar="الإعلان الرقمي">Digital Advertising</a></li>
+          <li><a href="#services" data-en="Content Marketing" data-ar="تسويق المحتوى">Content Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 data-en="Company" data-ar="الشركة">Company</h4>
+        <ul>
+          <li><a href="#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+          <li><a href="#work" data-en="Our Work" data-ar="أعمالنا">Our Work</a></li>
+          <li><a href="#contact" data-en="Contact" data-ar="اتصل">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 data-en="Legal" data-ar="القانونية">Legal</h4>
+        <ul>
+          <li><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+          <li><a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Elevate Marketing Co. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+      <p>123 Marketing Ave, Suite 400 | <a href="mailto:hello@elevate.com">hello@elevate.com</a></p>
     </div>
   </footer>
 
